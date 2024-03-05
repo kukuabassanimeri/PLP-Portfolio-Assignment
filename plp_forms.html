@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://kit.fontawesome.com/caeb9ec53e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>FORM</title>
+</head>
+<body>
+    <!--The "action" attribute in the form specifies the URL of the script or file that processes the form data when it's submitted. The "method" attribute specifies the HTTP method used to send the form data to the server, such as "GET" or "POST". -->
+    
+            <!--form starts-->
+            <div class="pl-20 pt-5 text-lg">
+                <h1 class="text-orange-600 font-bond pb-5">PLP NEW STUDENT REGISTRATION FORM</h1>
+                <form>
+                    <p class="text-gray-600">First Name:</p>
+                    <p><input type="text" name="firstname" size="50" class="rounded" style="width: 400px;"
+                            placeholder="Type your first name"></p>
+                    <p class="text-gray-600">Last Name: </p>
+                    <p><input type="text" name="lastname" size="50" class="rounded" style="width: 400px;"
+                            placeholder="Type your last name"></p>
+                    <p class="text-gray-600">DOB:</p>
+                    <p><input type="date" name="date" style="width: 400px;" placeholder="Type your DOB"></p>
+                    <p class="text-gray-600">Select your gender:</p>
+                    <p class="text-gray-600"><input type="radio" name="gender" value="female"> female</p>
+                    <p class="text-gray-600"><input type="radio" name="gender" value="male"> male</p>
+                    <p class="text-gray-600"><input type="radio" name="gender" value="male"> bisexual</p>
+                    <p class="text-gray-600">Address: </p>
+                    <p><input type="text" name="lastname" size="50" class="rounded" style="width: 400px;"
+                            placeholder="Type your Address"></p>
+                    <p class="text-gray-600">Phone Number:</p>
+                    <p><input type="number" name="number" size="70" class="rounded" style="width: 400px;"
+                            placeholder="Type your contact"></p>
+                    <p class="text-gray-600">Email:</p>
+                    <p><input type="email" name="email" size="50" class="rounded" style="width: 400px;"
+                            placeholder="Type your Email"></p>
+
+                    <!--<p class="text-gray-600">Leave message below</p>
+                    <p><textarea cols="52" rows="5" class="rounded" style="width: 400px;"
+                        placeholder="Message here"></textarea></p>-->
+                    <br>
+                    <p class="text-gray-600">Select your preferred course: <br>
+                    <select name="course">
+                    <option value="BISF">Web Technologies</option>
+                    <option value="BSD">Python</option>
+                    <option value="BSD">Dart with Flutter</option>
+                    <option value="BSD">Entreprenuership</option>
+                    <option value="BSD">Software Engineering</option>
+                    <option value="BSD">Database Design</option>
+                    </select>
+                    </p>
+                    <button type="reset" name="submit" class="rounded-full text-red-600">Cancel</button> 
+                    <br>
+                    <button type="submit" name="submit" class="rounded-full text-blue-600">Register</button> 
+                </form>
+            </div>
+            <!--form ends-->
+        </div>
+</body>
+</html>
